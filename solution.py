@@ -12,7 +12,7 @@ def solution(S, P, Q):
     result_output = []
     for i in range(len(P)):
         for j in range(4):
-            sub = impacts[P[i]][j] if P[i] > 0 else 0
+            sub = impacts[P[i]][j]
             if impacts[Q[i]+1][j] - sub > 0:
                 result_output.append(j+1)
                 break
